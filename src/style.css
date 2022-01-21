@@ -1,0 +1,39 @@
+* {
+  background-color: rgb(43, 42, 42);
+}
+.tabbar {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 37px;
+  border-bottom: solid rgb(53, 53, 53) 3px;
+  position: relative;
+}
+
+.tabbar input {
+  width: 100px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 9px;
+  color: #b3b0b0bd;
+  font-size: 14px;
+  transition: all 100ms linear;
+}
+
+.tabbar input:checked {
+  border-bottom: solid rgb(80, 255, 147) 3px;
+  color: rgb(255, 255, 255);
+}
+input:hover {
+  background-color: #3a3a3a;
+}
+.tabbar input:before {
+  content: attr(label);
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
